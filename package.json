@@ -1,0 +1,25 @@
+{
+  "name": "alltagsvokabeln",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node scripts/logic.test.mjs && node scripts/store.test.mjs",
+    "extract": "node scripts/extract-vocab.mjs"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-3": "^5.3.1",
+    "@fontsource/source-serif-4": "^5.3.1",
+    "@netlify/blobs": "^11.1.7",
+    "vite": "^6.4.5"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^4.10.38"
+  }
+}
